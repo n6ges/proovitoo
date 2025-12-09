@@ -1,0 +1,19 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Dependencies
+vendor/
+node_modules/
+
+# WordPress directories that don't need to be tracked
+wp-content/cache/
+wp-content/upgrades/
+
+# OPTIONAL: ignore uploads if repo should be light
+wp-content/uploads/
+
+# Sensitive config
+wp-config.php
+
+# Logs
