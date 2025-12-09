@@ -46,11 +46,13 @@ body {
     50%{background-position: 91% 100%}
     100%{background-position: 10% 0%}
 }
+
 @-moz-keyframes Animation {
     0%{background-position: 10% 0%}
     50%{background-position: 91% 100%}
     100%{background-position: 10% 0%}
 }
+
 @keyframes Animation { 
     0%{background-position: 10% 0%}
     50%{background-position: 91% 100%}
@@ -62,6 +64,7 @@ body {
     gap: 100px;
     flex-direction: row;
     position: relative;
+    max-width: 1280px;
 }
 
 .form {
@@ -555,6 +558,28 @@ body.page-loaded #newsletter .form .bottom-row {
 }
 
 @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeUp {
     from {
         opacity: 0;
         transform: translateY(20px);
